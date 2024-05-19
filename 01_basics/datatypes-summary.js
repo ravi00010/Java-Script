@@ -36,3 +36,29 @@ console.log(typeof bigNumber); // undefined
 console.log(typeof outsideTemp); // object
 console.log(typeof myFunction); // function
 console.log(typeof anotherId); // symbol
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-primitive)
+
+
+let myname="Ravi"
+
+let anothername="Choudhary"
+anothername=" rohan"
+
+console.log(anothername); //rohan
+console.log(myname); //ravi
+
+let userOne={
+    email:"user@gamil.com",
+    upi:"abc@ybl"
+}
+
+let usertwo=userOne
+
+usertwo.email = "ravi@gmail.com"
+
+console.log(useronr.email); // same value
+console.log(usertwo.email); // same value
