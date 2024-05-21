@@ -57,3 +57,38 @@ console.log(Object.values(tinderUser)); // keeping the values in an array
 console.log(Object.entries(tinderUser)); // keeping entries in an array means id = .... then name = ........
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); //true
+
+// Destructuring
+
+const course = {
+    coursename: "Java Script",
+    price: "999",
+    couseInstructor: "Ravi"
+}
+
+//course.couseInstructor
+
+const {couseInstructor: Instructor} = course
+
+//console.log(couseInstructor); //Ravi
+console.log(Instructor); // Ravi
+
+
+const navbar = ({company}) =>{
+}
+
+navbar(company = "Ravi")
+
+// API 
+
+/*{
+    "name" :"Ravi",
+    "couse_name": "Java Script",
+    "price":"free"
+}*/
+
+[
+    {},
+    {},
+    {}
+]
